@@ -19,9 +19,9 @@ Player two moves using the I, K, J and L keys.
 Each player's trail grows as they move.
 Players try to maneuver so the opponent collides with their trail.
 If a player collides with their opponent's trail...
-A "game over" message is displayed in the middle of the screen.
-The cycles turn white.
-Players keep moving and turning but don't run into each other.
+A "game over" message is displayed in the middle of the screen
+The cycles turn white
+Players keep moving and turning but don't run into each other
 
 # Getting Started
 
@@ -54,9 +54,11 @@ Python 3.8.0
 
 # Authors
 
-- cconover2b - Craig Conover - (cconover2@byui.edu)
-- ksantos16/ksantos - Kira Santos - (matt.kira15@gmail.com)
-- GhostLeader119 - Caden Campbell - (cadecamp9@gmail.com)
-- shots28 - Sam Hootini
+- Omachona God'spower Richard
+- Donna Meregillano
+- Felix Samuel Guzman
+- Elisabete Stahl
+- Farai Mugijima
+- Gabriel Tailor
 
 Team Planner - https://cconover2.notion.site/Team-Planner-Cycle-c50a8e6ab1384306b1496d368b768c50
