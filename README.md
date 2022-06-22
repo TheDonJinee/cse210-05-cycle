@@ -60,5 +60,3 @@ Python 3.8.0
 - Elisabete Stahl
 - Farai Mugijima
 - Gabriel Tailor
-
-Team Planner - https://cconover2.notion.site/Team-Planner-Cycle-c50a8e6ab1384306b1496d368b768c50
