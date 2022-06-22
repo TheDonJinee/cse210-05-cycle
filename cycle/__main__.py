@@ -4,8 +4,8 @@ from game.casting.cast import Cast
 from game.casting.score import Score
 from game.casting.snake import Snake
 from game.scripting.script import Script
-from game.scripting.control_actors_action import ControlActorsAction
-from game.scripting.control_actors_action_2 import ControlActorsAction_2
+from game.scripting.control_actors_action import ControlFirstActorsAction
+from game.scripting.control_actors_action_2 import ControlSecondActorsAction
 from game.scripting.move_actors_action import MoveActorsAction
 from game.scripting.handle_collisions_action import HandleCollisionsAction
 from game.scripting.draw_actors_action import DrawActorsAction
@@ -18,7 +18,7 @@ from game.shared.point import Point
 
 def main():
 
-    # create the cast
+    # Create casts
     cast = Cast()
     x = int(constants.MAX_X / 2)
     y = int(constants.MAX_Y / 2)
@@ -26,15 +26,14 @@ def main():
     y1 = int(constants.MAX_Y / 4)
     cast.add_actor("snakes", Snake("@", constants.GREEN, x, y))
     cast.add_actor("snakes", Snake("@", constants.RED, x1, y1))
-    # cast.add_actor("scores", Score())
 
-    # start the game
+    # Begin Game Play
     keyboard_service = KeyboardService()
     video_service = VideoService()
 
     script = Script()
-    script.add_action("input", ControlActorsAction(keyboard_service))
-    script.add_action("input", ControlActorsAction_2(keyboard_service))
+    script.add_action("input", ControlFirstActorsAction(keyboard_service))
+    script.add_action("input", ControlSecondActorsAction(keyboard_service))
     script.add_action("update", MoveActorsAction())
     script.add_action("update", HandleCollisionsAction())
     script.add_action("output", DrawActorsAction(video_service))

@@ -1,12 +1,10 @@
 import constants
 from game.scripting.action import Action
-from game.scripting.control_actors_action import ControlActorsAction
+from game.scripting.control_actors_action import ControlFirstActorsAction
 from game.shared.point import Point
 
 
-class ControlActorsAction_2(ControlActorsAction):
-    # Polymophism from ControlActorsAction
-    # Override the execute(cast, script) method as follows:
+class ControlSecondActorsAction(ControlFirstActorsAction):
 
     def __init__(self, keyboard_service):
         """Constructs a new ControlActorsAction using the specified KeyboardService.
