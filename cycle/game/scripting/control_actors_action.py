@@ -14,7 +14,7 @@ class ControlFirstActorsAction(Action):
     """
 
     def __init__(self, keyboard_service):
-        """Constructs a new ControlActorsAction using the specified KeyboardService.
+        """Constructs a new ControlActorsAction using the specified KeyboardService
         
         Args:
             keyboard_service (KeyboardService): An instance of KeyboardService.

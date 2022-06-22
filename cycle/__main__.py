@@ -18,7 +18,7 @@ from game.shared.point import Point
 
 def main():
 
-    # Create casts
+    # Create game casts
     cast = Cast()
     x = int(constants.MAX_X / 2)
     y = int(constants.MAX_Y / 2)

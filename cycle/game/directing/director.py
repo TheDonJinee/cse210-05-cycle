@@ -16,7 +16,7 @@ class Director:
         self._video_service = video_service
         
     def start_game(self, cast, script):
-        """Starts the game using the given cast and script. Runs the main game loop.
+        """Starts the game using the given cast and script. Runs the main game loop
 
         Args:
             cast (Cast): The cast of actors.
@@ -35,7 +35,7 @@ class Director:
         Args:
             group (string): The action group name.
             cast (Cast): The cast of actors.
-            script (Script): The script of actions.
+            script (Script): The script of actions
         """
         actions = script.get_actions(group)    
         for action in actions:

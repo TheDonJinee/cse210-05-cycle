@@ -23,7 +23,7 @@ class DrawActorsAction(Action):
         """Executes the draw actors action.
 
         Args:
-            cast (Cast): The cast of Actors in the game.
+            cast (Cast): The cast of Actors in the game
             script (Script): The script of Actions in the game.
         """
         snake1 = cast.get_actor("snakes", 0)

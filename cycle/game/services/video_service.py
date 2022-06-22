@@ -11,7 +11,7 @@ class VideoService:
         """Constructs a new VideoService using the specified debug mode.
         
         Args:
-            debug (bool): whether or not to draw in debug mode.
+            debug (bool): whether or not to draw in debug mode
         """
         self._debug = debug
 

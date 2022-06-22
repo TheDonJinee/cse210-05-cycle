@@ -9,7 +9,7 @@ class HandleCollisionsAction(Action):
     """
     An update action that handles interactions between the actors.
     
-    The responsibility of HandleCollisionsAction is to handle the situation when the snakes collides
+    The responsibility of HandleCollisionsAction is to handle the situation when the snakes collides.
     with each other's segments, or the game is over.
 
     Attributes:

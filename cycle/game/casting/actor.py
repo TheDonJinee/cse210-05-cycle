@@ -19,6 +19,7 @@ class Actor:
 
     def __init__(self):
         """Constructs a new Actor."""
+
         self._text = ""
         self._font_size = 15
         self._color = Color(255, 255, 255)
@@ -26,7 +27,7 @@ class Actor:
         self._velocity = Point(0, 0)
 
     def get_color(self):
-        """Gets the actor's color as a tuple of three ints (r, g, b).
+        """Gets the actor's color as a tuple of three ints (r, g, b)
         
         Returns:
             Color: The actor's text color.
@@ -34,7 +35,7 @@ class Actor:
         return self._color
 
     def get_font_size(self):
-        """Gets the actor's font size.
+        """Gets the actor text's font size.
         
         Returns:
             Point: The actor's font size.
@@ -70,8 +71,8 @@ class Actor:
         from one side of the screen to the other when it reaches the given maximum x and y values.
         
         Args:
-            max_x (int): The maximum x value.
-            max_y (int): The maximum y value.
+            max_x (int): The maximum value of y.
+            max_y (int): The maximum value of y.
         """
         x = (self._position.get_x() + self._velocity.get_x()) % constants.MAX_X
         y = (self._position.get_y() + self._velocity.get_y()) % constants.MAX_Y

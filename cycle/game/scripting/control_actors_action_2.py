@@ -10,7 +10,7 @@ class ControlSecondActorsAction(ControlFirstActorsAction):
         """Constructs a new ControlActorsAction using the specified KeyboardService.
         
         Args:
-            keyboard_service (KeyboardService): An instance of KeyboardService.
+            keyboard_service (KeyboardService): An instance of KeyboardService
         """
         self._keyboard_service = keyboard_service
         self._direction = Point(constants.CELL_SIZE, 0)

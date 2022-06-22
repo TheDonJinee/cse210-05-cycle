@@ -8,7 +8,7 @@ class KeyboardService:
     The responsibility of a KeyboardService is to indicate whether or not a key is up or down.
 
     Attributes:
-        _keys (Dict[string, int]): The letter to key mapping.
+        _keys (Dict[string, int]): The letter to key mapping
     """
 
     def __init__(self):

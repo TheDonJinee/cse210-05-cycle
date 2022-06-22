@@ -13,7 +13,7 @@ class Script:
         self._actions = {}
         
     def add_action(self, group, action):
-        """Adds an action to the given group.
+        """Adds an action to the given group
         
         Args:
             group (string): The name of the group.
